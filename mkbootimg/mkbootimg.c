@@ -115,7 +115,8 @@ int main(int argc, char **argv)
     uint8_t* sha;
     unsigned base           = 0x10000000;
     unsigned kernel_offset  = 0x00008000;
-    unsigned ramdisk_offset = 0x01000000;
+    unsigned ramdisk_offset = 0x01400000;
+//    unsigned ramdisk_offset = 0x01000000;
     unsigned second_offset  = 0x00f00000;
     unsigned tags_offset    = 0x00000100;
 
