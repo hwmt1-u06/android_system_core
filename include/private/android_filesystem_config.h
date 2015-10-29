@@ -63,7 +63,7 @@
 #define AID_MDNSR         1020  /* MulticastDNSResponder (service discovery) */
 #define AID_GPS           1021  /* GPS daemon */
 #define AID_UNUSED1       1022  /* deprecated, DO NOT USE */
-#define AID_MEDIA_RW      1023  /* internal media storage write access */
+#define AID_MEDIA_RW      1023  /* internal share storage write access */
 #define AID_MTP           1024  /* MTP USB driver access */
 #define AID_UNUSED2       1025  /* deprecated, DO NOT USE */
 #define AID_DRMRPC        1026  /* group for drm rpc */
@@ -240,8 +240,8 @@ static const struct fs_path_config android_dirs[] = {
     { 00771, AID_SHELL,  AID_SHELL,  0, "data/local" },
     { 01771, AID_SYSTEM, AID_MISC,   0, "data/misc" },
     { 00770, AID_DHCP,   AID_DHCP,   0, "data/misc/dhcp" },
-    { 00775, AID_MEDIA_RW, AID_MEDIA_RW, 0, "data/media" },
-    { 00775, AID_MEDIA_RW, AID_MEDIA_RW, 0, "data/media/Music" },
+    { 00775, AID_MEDIA_RW, AID_MEDIA_RW, 0, "data/share" },
+    { 00775, AID_MEDIA_RW, AID_MEDIA_RW, 0, "data/share/Music" },
     { 00771, AID_SYSTEM, AID_SYSTEM, 0, "data" },
     { 00750, AID_ROOT,   AID_SHELL,  0, "sbin" },
     { 00755, AID_ROOT,   AID_ROOT,   0, "system/addon.d" },
@@ -272,7 +272,7 @@ static const struct fs_path_config android_files[] = {
     { 00555, AID_ROOT,      AID_ROOT,      0, "system/etc/rc.*" },
     { 00755, AID_ROOT,      AID_ROOT,      0, "system/addon.d/*" },
     { 00644, AID_SYSTEM,    AID_SYSTEM,    0, "data/app/*" },
-    { 00644, AID_MEDIA_RW,  AID_MEDIA_RW,  0, "data/media/*" },
+    { 00644, AID_MEDIA_RW,  AID_MEDIA_RW,  0, "data/share/*" },
     { 00644, AID_SYSTEM,    AID_SYSTEM,    0, "data/app-private/*" },
     { 00644, AID_APP,       AID_APP,       0, "data/data/*" },
     { 00755, AID_ROOT,      AID_ROOT,      0, "system/bin/ping" },

@@ -73,7 +73,7 @@
 #define MF_ZRAMSIZE     0x100
 #define MF_VERIFY       0x200
 /*
- * There is no emulated sdcard daemon running on /data/media on this device,
+ * There is no emulated sdcard daemon running on /data/share on this device,
  * so treat the physical SD card as the only external storage device,
  * a la the Nexus One.
  */
